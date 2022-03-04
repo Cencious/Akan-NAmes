@@ -22,7 +22,8 @@ function getAkan(){
      alert("please enter a valid date and month")
  }
  if(gender==="male"){
-     alert(maleAkannames[day])
+     //alert(maleAkannames[day])
+     document.getElementById("message").innerHTML="Your Akan name is " +maleAkannames[day]
  }
  else if(gender==="female"){
      alert(femaleAkannames[day]) 
