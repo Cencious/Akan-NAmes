@@ -26,11 +26,10 @@ function getAkan(){
      document.getElementById("message").innerHTML="Your Akan name is " +maleAkannames[day]
  }
  else if(gender==="female"){
-     alert(femaleAkannames[day]) 
+    document.getElementById("message").innerHTML="Your Akan name is " +femaleAkannames[day]
  }
  else{
      alert("choose a valid gender")
  }
  
-
      }
