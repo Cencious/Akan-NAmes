@@ -2,11 +2,11 @@ function getAkan(){
   let birthDate= document.getElementById("birthday").value;
   //alert(birthDate)
  // console.log(birthDate)
- let dateArray=birthDate.split("-")
+ let dateArray=new Date(birthDate);
  //alert(dateArray)
- let year=parseInt(dateArray[0])
- let month=parseInt(dateArray[1])
- let date=parseInt(dateArray[2])
+ let year=dateArray.getFullYear()
+ let month=dateArray.getMonth()
+ let date=dateArray.getDay()
  //alert(date)
  let century=Math.ceil(year/100)
  //alert(century)
@@ -18,18 +18,18 @@ function getAkan(){
  //alert(gender)
  let maleAkannames=["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
  let femaleAkannames=["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]
- if((date <=0||date>31)||(month<=0||month>12)){
+ if(month<=0||month>12){
      alert("please enter a valid date and month")
  }
+ //alert(day)
  if(gender==="male"){
-     //alert(maleAkannames[day])
-     document.getElementById("message").innerHTML="Your Akan name is " +maleAkannames[day]
+     //alert(day)
+     document.getElementById("message").innerHTML="Your Akan name is " +maleAkannames[date]
  }
  else if(gender==="female"){
-    document.getElementById("message").innerHTML="Your Akan name is " +femaleAkannames[day]
+    document.getElementById("message").innerHTML="Your Akan name is " +femaleAkannames[date]
  }
  else{
      alert("choose a valid gender")
  }
- 
      }
