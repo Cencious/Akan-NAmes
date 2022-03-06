@@ -1,5 +1,5 @@
 body{
-    background-color:brown;
+    background-color:rgb(96, 219, 219);
 }
 .container{
     font-size:25px;
@@ -46,4 +46,20 @@ footer:hover{
 }
 footer a:hover{
     color: white;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    padding: 10px;
+}
+.submit{
+    width: 20%;
+}
+button{
+    border: none;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+    margin-top: 10px;
+    color: whitesmoke;
 }
