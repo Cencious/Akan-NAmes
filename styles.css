@@ -3,9 +3,9 @@ body{
 }
 .container{
     font-size:25px;
-    margin: 50px;
     border: 1px;
     padding: 1px;
+    width: 80%;
 }
 .row{
    text-align: justify; 
@@ -28,14 +28,16 @@ body{
 }
 .akan-names{
     display: flex;
+    justify-content: space-around;
     }
 footer{
     margin-top: 30px;
-    background: black;
+    background: darkred;
+    
     padding: 10px;
     width: fit-content;
     border-radius: 5px;
- border: 2px solid black;   
+ border: 2px solid darkred;   
 }
 footer a{
     text-decoration: none;
@@ -45,7 +47,7 @@ footer:hover{
     background: none;
 }
 footer a:hover{
-    color: white;
+    color: darkred;
 }
 form div{
     display: flex;
@@ -62,4 +64,17 @@ button{
     background-color: cornflowerblue;
     margin-top: 10px;
     color: whitesmoke;
+}
+h1{
+    color: crimson;
+    text-align: center;
+    border-bottom: 2px solid crimson;
+    padding-bottom: 10px;  
+}
+.intro strong{
+    color: darkred;
+}
+.intro{
+    margin-top: 5px;
+
 }
