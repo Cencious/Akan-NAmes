@@ -7,23 +7,24 @@
     <title>Akan names Form</title>
     <link rel="stylesheet" href="bootstrap.css" type="text/css">
     <link rel="stylesheet" href="styles.css" type="text/css">
-
 </head>
 <body>
-    <h1>Get your Akan name</h1>
-    <p>Fill in the form below and get your Akan Name</p>
-    <form>
-       <label for="Year of Birth">select year of birth</label>
-       <input type="date" id="birthday" name="birthday">
-       <label for="Gender">Select your gender</label>
-       <select name="Gender" id="gender">
-           <option value="select">select</option>
-           <option value="male">male</option>
-           <option value="female">female</option>
-       </select>
-       <button type="button" onclick="getAkan()">submit</button>
-    </form>
-    <p id="message"></p>
+    <div class="container"><h1>Get your Akan name</h1>
+        <p>Fill in the form below and get your Akan Name</p>
+        <form>
+           <div class="birthday"><label for="Year of Birth">select year of birth</label>
+            <input type="date" id="birthday" name="birthday"></div>
+           <div class="gender"><label for="Gender">Select your gender</label>
+            <select name="Gender" id="gender">
+                <option value="select" selected disabled hidden>select</option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+            </select>
+        </div>
+           <div class="submit"><button type="button" onclick="getAkan()">submit</button></div>
+        </form>
+        <p id="message"></p>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
